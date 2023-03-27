@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+body{
+    font-family: Roboto,Arial,sans-serif;
+    background-color:   #ddd;
+}
+:root {
+    --primary-color: var(#2874f0)
+}
+
+header {
+    background-color: #2874f0;    
+    height: 57px;
+}
+
+
+header nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1248px;
+    /* justify-content: center; */
+}
+header nav .logo{
+    display: flex;
+    min-width: 140px;
+    justify-content: flex-end;
+    margin-left: -25px;
+}
+
+
+header nav .logo img {
+    width: 65px;
+    height: 20px;
+    cursor: pointer;
+
+
+}
+
+header .search {
+    height: 6vh;
+    width: 580px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.381);
+    background-color: white;
+    margin: 0 0 0 15px;
+    
+}
+header .search input{
+    height: 100%;
+    width: 540px;
+    border-radius: 2px;
+    margin-left: 30px;
+    /* padding: 0 8px; */
+    border: none;
+    outline: none;
+    font-size: 15px
+    
+    
+}
+header .search .search-btn{
+    height: 5vh;
+    width:3vw ;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    border-radius: 0 2px 2px 0;
+}
+header .login{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+}
+header .login button{
+    height: 31px;
+    width: 7vw;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 20px;
+    color: #2874f0;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+header .seller{
+    
+    margin: 0 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+header .more{
+    margin: 0 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+header .more svg{
+    margin-left: 1px;
+    cursor: pointer;
+    rotate: -90deg;
+}
+header .more svg:hover{
+    rotate: 90deg;
+}
+
+header .cart{
+    margin: 0 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+header .cart{
+    margin-left:8px ;
+    cursor: pointer;
+}
+
+.section-1{
+    height: 122px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.208);
+}
+.section-1-container{
+    height: 100%;
+    width:1228px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.section-1-item{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center ;
+    gap: 4px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+.section-1-item:hover{
+    color: #2874f0;
+}
+
+.section-1-item img{
+    height: 70px;
+    width: 70px;
+}
+
+.section-2-container{
+    margin-top: 20px;
+    height: 280px;
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/0735712fe84c602d.jpg?q=50);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+.section-3-container{
+    margin-top: 20px;
+    height: 122px;
+    cursor: pointer;
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/2848/246/image/d56a3ed6d200038a.jpg?q=50
+    );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-4-container{
+    margin: 15px 0 0 0 ;
+    height: 380px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-4 .offers{
+    width: 300px;
+    height: 100%;
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/1e483f8045ec13a8.jpg?q=90
+    );
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.section-4 .viewall{
+    margin-top: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 400;
+    flex-direction: column;
+
+}
+.section-4 .viewall button{
+    margin-top: 10px;
+    height: 40px;
+    width: 80px;
+    background-color: #2874f0;
+    font-size: 10;
+    font-weight: 600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.281);
+}
+.section-4-list{
+    height: 100%;
+    width: calc(100%-300px);
+    display: flex;
+    overflow-x: auto;
+    
+    
+}
+.section-4-item{
+    width: 230px;
+    height: 100%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+.section-4-list img{
+    height: 24vh;
+   margin: 0 70px 0 70px;
+   cursor: pointer;
+}
+.section-4-list img:hover{
+    height: 25vh;
+}
+.section-4-head{
+    margin-top: 16px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.section-4-price{
+    color: #388e3c;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.section-4-explore{
+    opacity: 0.7;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.section-5{
+display: flex;
+justify-content: space-between;
+overflow-y: auto;
+margin-top: 20px;
+background-color: white;
+
+}
+.section-5 img{
+    width: 40%;
+    margin-right: 20px;
+}
+ 
+footer{
+    height: 10vh;
+    width: 100%;
+    background-color:#172337;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    color: #2874f0;
+}
