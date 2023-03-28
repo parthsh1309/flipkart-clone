@@ -5,18 +5,31 @@
     padding: 0;
     box-sizing: border-box;
     /* overflow: hidden; */
+
 }
-body{
-    font-family: Roboto,Arial,sans-serif;
-    background-color:   #ddd;
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    background-color: #ddd;
+    overflow: auto;
 }
+
 :root {
     --primary-color: var(#2874f0)
 }
 
 header {
-    background-color: #2874f0;    
+    background-color: #2874f0;
     height: 57px;
+    position: sticky;
+    top: 0;
+}
+
+header .logo-search-row {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
 }
 
 
@@ -28,11 +41,12 @@ header nav {
     max-width: 1248px;
     /* justify-content: center; */
 }
-header nav .logo{
+
+header nav .logo {
     display: flex;
-    min-width: 140px;
+    width: 100px;
     justify-content: flex-end;
-    margin-left: -25px;
+    margin-left: -9px;
 }
 
 
@@ -40,21 +54,23 @@ header nav .logo img {
     width: 65px;
     height: 20px;
     cursor: pointer;
+    margin-top: 10px;
 
 
 }
 
 header .search {
-    height: 6vh;
+    height: 40px;
     width: 580px;
     display: flex;
     align-items: center;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.381);
     background-color: white;
     margin: 0 0 0 15px;
-    
+
 }
-header .search input{
+
+header .search input {
     height: 100%;
     width: 540px;
     border-radius: 2px;
@@ -63,12 +79,11 @@ header .search input{
     border: none;
     outline: none;
     font-size: 15px
-    
-    
 }
-header .search .search-btn{
+
+header .search .search-btn {
     height: 5vh;
-    width:3vw ;
+    width: 3vw;
     background-color: white;
     border: none;
     cursor: pointer;
@@ -77,13 +92,15 @@ header .search .search-btn{
     align-items: center;
     border-radius: 0 2px 2px 0;
 }
-header .login{
+
+header .login {
     height: 100%;
     display: flex;
     align-items: center;
     margin: 0 40px;
 }
-header .login button{
+
+header .login button {
     height: 31px;
     width: 7vw;
     font-size: 14px;
@@ -96,8 +113,8 @@ header .login button{
 
 }
 
-header .seller{
-    
+header .seller {
+
     margin: 0 20px;
     color: white;
     font-size: 16px;
@@ -105,7 +122,7 @@ header .seller{
     cursor: pointer;
 }
 
-header .more{
+header .more {
     margin: 0 30px;
     color: white;
     font-size: 16px;
@@ -113,16 +130,17 @@ header .more{
     cursor: pointer;
 }
 
-header .more svg{
+header .more svg {
     margin-left: 1px;
     cursor: pointer;
     rotate: -90deg;
 }
-header .more svg:hover{
+
+header .more svg:hover {
     rotate: 90deg;
 }
 
-header .cart{
+header .cart {
     margin: 0 20px;
     color: white;
     font-size: 16px;
@@ -130,47 +148,75 @@ header .cart{
     cursor: pointer;
 }
 
-header .cart{
-    margin-left:8px ;
+header .cart {
+    margin-left: 8px;
     cursor: pointer;
 }
 
-.section-1{
+header .hamcollapse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger {
+    position: relative;
+    cursor: pointer;
+    /* top: 10px; */
+    display: none;
+
+
+}
+
+.line {
+    width: 33%;
+    background-color: rgb(255, 255, 255);
+    height: 4px;
+    margin: 3px 3px;
+    width: 30px;
+
+
+}
+
+.section-1 {
     height: 122px;
     width: 100%;
     background-color: white;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.208);
 }
-.section-1-container{
+
+.section-1-container {
     height: 100%;
-    width:1228px;
+    width: 1228px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 0 auto;
 }
-.section-1-item{
+
+.section-1-item {
     height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center ;
+    justify-content: center;
     gap: 4px;
     font-size: 15px;
     font-weight: 500;
     cursor: pointer;
     color: rgb(0, 0, 0);
 }
-.section-1-item:hover{
+
+.section-1-item:hover {
     color: #2874f0;
 }
 
-.section-1-item img{
+.section-1-item img {
     height: 70px;
     width: 70px;
 }
 
-.section-2-container{
+.section-2-container {
     margin-top: 20px;
     height: 280px;
     background-image: url(https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/0735712fe84c602d.jpg?q=50);
@@ -181,19 +227,19 @@ header .cart{
 }
 
 
-.section-3-container{
+.section-3-container {
     margin-top: 20px;
     height: 122px;
     cursor: pointer;
     background-image: url(https://rukminim1.flixcart.com/fk-p-flap/2848/246/image/d56a3ed6d200038a.jpg?q=50
-    );
+);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.section-4-container{
-    margin: 15px 0 0 0 ;
+.section-4-container {
+    margin: 15px 0 0 0;
     height: 380px;
     background-color: white;
     display: flex;
@@ -201,15 +247,16 @@ header .cart{
     align-items: center;
 }
 
-.section-4 .offers{
+.section-4 .offers {
     width: 300px;
     height: 100%;
     background-image: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/1e483f8045ec13a8.jpg?q=90
-    );
+);
     background-repeat: no-repeat;
     background-position: bottom;
 }
-.section-4 .viewall{
+
+.section-4 .viewall {
     margin-top: 132px;
     display: flex;
     align-items: center;
@@ -219,7 +266,8 @@ header .cart{
     flex-direction: column;
 
 }
-.section-4 .viewall button{
+
+.section-4 .viewall button {
     margin-top: 10px;
     height: 40px;
     width: 80px;
@@ -231,15 +279,17 @@ header .cart{
     cursor: pointer;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.281);
 }
-.section-4-list{
+
+.section-4-list {
     height: 100%;
     width: calc(100%-300px);
     display: flex;
     overflow-x: auto;
-    
-    
+
+
 }
-.section-4-item{
+
+.section-4-item {
     width: 230px;
     height: 100%;
     padding: 0 15px;
@@ -249,15 +299,18 @@ header .cart{
     justify-content: center;
     margin-right: 30px;
 }
-.section-4-list img{
+
+.section-4-list img {
     height: 24vh;
-   margin: 0 70px 0 70px;
-   cursor: pointer;
+    margin: 0 70px 0 70px;
+    cursor: pointer;
 }
-.section-4-list img:hover{
+
+.section-4-list img:hover {
     height: 25vh;
 }
-.section-4-head{
+
+.section-4-head {
     margin-top: 16px;
     font-size: 17px;
     font-weight: 500;
@@ -265,45 +318,179 @@ header .cart{
     cursor: pointer;
 }
 
-.section-4-price{
+.section-4-price {
     color: #388e3c;
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
 }
-.section-4-explore{
+
+.section-4-explore {
     opacity: 0.7;
     margin-top: 12px;
     cursor: pointer;
 }
 
-.section-5{
-display: flex;
-justify-content: space-between;
-overflow-y: auto;
-margin-top: 20px;
-background-color: white;
+.section-5 {
+    display: flex;
+    justify-content: space-between;
+    overflow-y: auto;
+    margin-top: 20px;
+    background-color: white;
 
 }
-.section-5 img{
+
+.section-5 img {
     width: 40%;
     margin-right: 20px;
 }
- 
-footer{
+
+footer {
     height: 10vh;
     width: 100%;
-    background-color:#172337;
+    background-color: #172337;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 15px;
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: white;
 }
-footer a:hover{
+
+footer a:hover {
     color: #2874f0;
+}
+
+@media screen and (max-width:1230px) {
+    header nav {
+        flex-direction: column;
+        overflow: visible;
+    }
+
+    header {
+        height: 8vh;
+
+    }
+
+    header .logo-search-row {
+        margin-top: 20px;
+        margin-left: -129px;
+
+    }
+
+    header .logo-search-row .hamburger {
+        margin: 5px 0 0 0;
+    }
+
+    .section-1 {
+        overflow-x: auto;
+        width: 100%;
+        overflow-y: hidden;
+
+    }
+
+    .section-1-item {
+        margin: 0px 20px;
+        padding: auto;
+    }
+
+    .section2 {
+        height: 259px;
+        width: 100%;
+    }
+
+    .section-2-container {
+        background-size: cover;
+    }
+
+    header .logo img {
+        /* display: none; */
+        width: 30px;
+        margin-left: -40px;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+
+
+
+    header .search {
+        margin: 0 30px;
+    }
+
+    header .search input {
+        width: 380px;
+        margin-right: 20px;
+
+        margin: auto;
+
+    }
+
+    header .search .search-btn {
+        height: 40px;
+        width: 70px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    header .hamcollapse {
+        display: none;
+        height: 30vh;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        position: relative;
+        overflow: hidden;
+        margin: 20px;
+
+
+    }
+
+    header .hamcollapse .login {
+        margin: -40px 0px -30px 0px;
+    }
+
+    header .hamcollapse .login button {
+        width: 21vw;
+    }
+
+    header .hamcollapse .seller {
+        margin-bottom: 20px;
+    }
+
+    header .hamcollapse .more {
+        margin-bottom: 20px;
+    }
+
+    .section-4 .viewall {
+        margin-right: 50px;
+        margin-left: 50px;
+
+    }
+
+    .section-4-item {
+        margin-right:120px;
+    }
+    .section-5{
+        height: 32vh;
+    }
+    .section-5 img{
+        width:80%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header .search {
+        width: 100px;
+    }
+
+    .hamburger {
+        left: 107px;
+
+    }
 }
